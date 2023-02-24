@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom, rgb(97, 79, 79), rgb(30, 102, 146), rgb(100, 88, 63));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Shantell Sans', cursive;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    animation-name: backgrounkeyframes;
+    animation-timing-function:ease-out;
+    animation-duration:100s;
+    animation-iteration-count:infinite;   
+
+}
+@keyframes backgrounkeyframes{
+    10%,30%,50%,70%,90%{background: linear-gradient(to left bottom, rgb(116, 144, 153), rgb(184, 119, 129), rgb(115, 193, 115))}
+    20%,40%,60%,80%,100%{background: linear-gradient(to left bottom, rgb(193, 124, 134), rgb(81, 113, 133), rgb(128, 53, 64));}
+}   
+
+.mainContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.textbox{
+    padding: 4px;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Shantell Sans', cursive;
+}
+.textbox:hover{
+    opacity: 0.6;
+    
+}
+.textbox::placeholder{
+    color: white;
+    font-family: 'Shantell Sans', cursive;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.254);
+    font-size: 20px;
+}
+.textbox:hover{
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  
+  @keyframes example {
+    0%   {border-right: 1px; border-color: rgb(131, 51, 51); border-style: solid;}
+    10%  {border-top: 1px; border-color: rgb(189, 26, 26); border-style: solid;}
+    20%  {border-left: 1px; border-color: rgb(36, 1, 1); border-style: solid;}
+    30%  {border-bottom: 1px; border-color: rgb(44, 223, 50); border-style: solid;}
+    40%  {border-right: 1px; border-color: rgb(60, 19, 103); border-style: solid;}
+    50%  {border-top: 1px; border-color: rgb(124, 28, 28); border-style: solid;}
+    60%  {border-left: 1px; border-color: rgb(81, 18, 18); border-style: solid;}
+    70%  {border-bottom: 1px; border-color: rgb(57, 49, 177); border-style: solid;}
+    80%  {border-right: 1px; border-color: rgb(255, 255, 255); border-style: solid;}
+    90%  {border-top: 1px; border-color: rgb(185, 26, 202); border-style: solid;}
+    100% {border-bottom: 2px;}
+  }
+
+.add-btn{
+    padding: 12px;
+    border-radius: 3px;
+    background-color: rgba(12, 3, 3, 0.172);
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    transition: all 0.2s ease-in;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.446);
+    
+    
+    
+    
+}
+
+.add-btn:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    background-color: white;
+    color: rgba(12, 3, 3, 0.76);
+}
+
+.theimg{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 85px;
+    border: 3px solid rgba(0, 0, 0, 0.205);
+    margin-bottom: 60px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.362);
+}
+.middle-div{
+
+    margin-top: 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottomdiv{
+
+    margin-top: 60px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    vertical-align: top;
+
+}
